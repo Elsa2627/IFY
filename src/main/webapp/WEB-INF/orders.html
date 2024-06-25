@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vos Commandes - IFY Paris</title>
+    <link rel="stylesheet" href="orders.css"> <!-- S'assurer que le fichier styles.css est dans le même dossier que orders.html -->
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">IFY Paris</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="orders.html">Commandes</a></li>
+            <li><a href="favorites.html">Favoris</a></li>
+            <li><a href="auth.html">Connexion</a></li>
+        </ul>
+        <div class="cart">
+            <a href="cart.html">
+               <img src="../images/icons8-shopping-cart-30.png" height="30" width="30" alt="Panier"/>
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+    <h1>Vos Commandes</h1>
+    <div id="ordersContainer">
+        <!-- Les détails des commandes seront insérés ici -->
+    </div>
+</main>
+<!-- Zone où les articles du panier seront listés -->
+<div id="divPanier">
+    <h3>Mon Panier</h3>
+</div>
+
+
+<div class="progress-container">
+    <span class="progress-step active">Chariot</span>
+    <span class="progress-step">Vérifier</span>
+    <span class="progress-step">Confirmation</span>
+</div>
+<div class="empty-state">
+<img src="../images/icons8-shopping-bag-48.png" height="48" width="48" alt="Panier vide"/>
+    <h2>Votre panier est vide</h2>
+    <p>Aucune commande en cours.</p>
+    <button onclick="location.href='index.html'">Continuer vos achats</button>
+</div>
+
+
+<footer>
+
+    <footer>
+        <div class="footer-service">
+            <h2>SERVICE CLIENT</h2>
+            <p>500 – 401 – 4458</p>
+            <p>Du lundi au vendredi : de 9h à 21h </p>
+            <p>Samedi : 10h00 à 21h00 </p>
+        </div>
+        <div class="footer-links">
+            <!-- Add any additional links you need for the footer -->
+        </div>
+
+
+    <p>&copy; 2024 IFY Paris. Tous droits réservés.</p>
+
+</footer>
+
+<script src="orders.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>

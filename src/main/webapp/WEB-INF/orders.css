@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #E7E7E7; /* Fond similaire à celui d'Hermès */
+}
+
+header, footer {
+    background-color: #FAFAFA; /* Fond clair */
+    padding: 10px 0;
+    text-align: center;
+    color: #333; /* Texte plus foncé pour un meilleur contraste */
+}
+
+main {
+    padding: 20px;
+    background-color: #FFF; /* Arrière-plan blanc pour le contenu principal */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #FFF; /* Fond blanc pour la navigation */
+}
+
+nav .logo a {
+    font-weight: bold;
+    color: #5a4638; /* Couleur du logo */
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #5a4638; /* Couleur des liens */
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #333; /* Couleur au survol */
+}
+
+footer {
+    background-color: #F5F5F5; /* Fond du pied de page */
+    color: #333;
+}
+
+.container {
+    max-width: 1140px; /* Largeur maximale ajustée pour plus de contenu */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.progress-container {
+    display: none; /* Cacher la barre de progression pour un style plus épuré */
+}
+
+.empty-state {
+    border: none; /* Retirer les bordures pour un style plus plat */
+    padding: 2rem;
+    text-align: center; /* Centrer le contenu */
+}
+
+.empty-state img {
+    margin: 20px 0;
+    width: 64px; /* Ajuster la taille de l'image */
+}
+
+.empty-state h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1rem; /* Espacement après le titre */
+}
+
+.empty-state p {
+    color: #666;
+    margin-bottom: 2rem; /* Espacement après le paragraphe */
+}
+
+button {
+    background-color: #5a4638; /* Couleur de fond du bouton similaire au logo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333; /* Couleur de fond du bouton au survol */
+}

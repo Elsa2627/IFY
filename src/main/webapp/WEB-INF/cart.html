@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Panier - IFY</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html" class="logo">IFY PARIS</a>
+        <!-- Ajoutez d'autres liens ou boutons ici si nécessaire -->
+    </nav>
+</header>
+<main class="container">
+    <h2>Votre Panier</h2>
+    <ul id="listePanier"></ul>
+</main>
+    <div class="cart-summary">
+        <h2>Récapitulatif du Panier</h2>
+        <ul>
+            <li>Sous-total: <span id="sub-total"></span></li>
+            <li>Frais de livraison: <span id="shipping-cost"></span></li>
+            <li>Total: <span id="total-cost"></span></li>
+        </ul>
+        <button id="checkout-btn" class="btn-checkout">Procéder au Paiement</button>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 IFY. Tous droits réservés.</p>
+</footer>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

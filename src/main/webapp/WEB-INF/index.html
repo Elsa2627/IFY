@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENT FOR YOU</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">
+                <img src="../images/DALL·E 2024-04-08 21.16.48 - Create an image of a stylish black outline of a handbag on a white background. The design should be identical to the reference image, with the additio.webp" alt="IFY PARIS" alt="IFY PARIS" class="logo">
+            </div>
+            <div class="nav-item" id="nav-links">
+                <a href="orders.html" id="orderListBtn">Orders</a>
+                <a href="favorites.html" id="favItemsBtn">Favorites</a>
+                <a href="auth.html" id="loginBtn">Login</a>
+            </div>
+            <div class="nav-item" id="search-area">
+                <label for="searchQuery"></label><input type="text" placeholder="Search for an article..." id="searchQuery">
+                <button id="searchBtn">research</button>
+            </div>
+            <div class="nav-item cart">
+                <a href="orders.html">
+                    <img src="../images/icons8-shopping-cart-30.png" alt="Cart"/>
+                </a>
+            </div>
+            <div id="cart-items-container">
+                <!-- Les articles du panier seront ajoutés ici par le script -->
+            </div>
+        </div>
+    </nav>
+
+
+<section class="hero">
+    <video autoplay muted loop id="heroVideo">
+        <source src="../videos/3453496463-preview.mp4" type="video/mp4">
+
+    </video>
+    <div class="hero-text">
+        <h1>Discover our new collection of bags</h1>
+        <p>Explore exclusive designs.</p>
+    </div>
+</section>
+</header>
+
+
+<main>
+    <section class="featured-articles">
+        <h2>New Arrivals</h2>
+        <div class="articles-container">
+
+            <div class="article">
+                <a href="article2.html?id=3">
+                    <img src="../images/handbag-444171_1280.jpg" alt="BELLA" class="article-image">
+                    <div class="article-info">
+                        <h3>BELLA</h3>
+                        <p>€120.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="article">
+                <a href="article3.html?id=1">
+                    <img src="../images/istockphoto-1525596898-1024x1024.jpg" alt="CHLOE" class="article-image">
+                    <div class="article-info">
+                        <h3>CHLOE</h3>
+                        <p>€150.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="article">
+                <a href="article1.html?id=2">
+                    <img src="../images/istockphoto-499567374-1024x1024.jpg" alt="EVE" id="2" class="article-image">
+                    <div class="article-info">
+                        <h3>EVE</h3>
+                        <p>Tote Bag</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 INVENT FOR YOU. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

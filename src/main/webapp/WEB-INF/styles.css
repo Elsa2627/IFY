@@ -1,0 +1,197 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #C19A6B; /* Fond couleur crème pour une touche élégante */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #A67B5B; /* Marron plus doux pour harmoniser avec le thème */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: #FFA500; /* Texte orange pour un contraste élégant */
+}
+
+.nav-logo img {
+    height: 60px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+}
+
+#search-area {
+    display: flex;
+}
+
+#searchQuery {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+#searchBtn {
+    padding: 5px 10px;
+    background-color: #FFA500; /* Bouton orange pour attirer l'attention */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #cc8400; /* Assombrir le bouton au survol */
+}
+
+.cart img {
+    width: 24px;
+}
+
+#cart-count {
+    background-color: #A67B5B; /* Marron correspondant à la navbar */
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.article {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #FFF7F0; /* Fond très clair pour les cartes */
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.article-info {
+    padding: 10px;
+}
+
+.article-info h3 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.article-info p {
+    color: #A67B5B; /* Marron doux pour le prix */
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-item {
+        margin: 5px 0; /* Ajustement des marges pour les appareils mobiles */
+    }
+
+    #itemsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    #itemsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hero section with parallax effect */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 500px;
+    background-attachment: fixed;
+}
+
+#heroVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%; height: 100%; object-fit: cover;
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); /* Subtle overlay for better text visibility */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+footer {
+    background-color: #A67B5B; /* Consistent with navbar color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Ensure there's space before the footer */
+}
+
